@@ -12,7 +12,7 @@ const tooltip = d3.select("#tooltip");
 
 const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-d3.json("data/data.json").then(data => {
+d3.json("data.json").then(data => {
 
   const root = d3.hierarchy(data)
     .sum(d => d.value)
@@ -77,3 +77,4 @@ d3.json("data/data.json").then(data => {
   });
 
 });
+
